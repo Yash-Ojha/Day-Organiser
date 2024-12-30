@@ -17,6 +17,10 @@ a:hover {
   color: #535bf2;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -57,11 +61,12 @@ h1 {
     input{
       height: 48px;
       padding: 0 20px;
+      padding-right: 125px;
       font-size: 18px;
       line-height: 45px;
       border-radius: 10px;
       border: 1px solid #000;
-      min-width: 400px;
+      width: 400px;
     }
     button{
       height: 38px;
@@ -187,5 +192,52 @@ footer{
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .todo-list-wrap {
+    padding: 40px 20px;
+    .add-task-form {
+      input {
+        width: 350px;
+        padding-right: 120px;
+      }
+      button {
+        padding-inline: 10px;
+        width: 110px;
+        margin-left: -115px;
+      }
+    }
+    ul {
+      min-width: 300px;
+      li{
+        padding: 10px 5px;
+        .task-wrap{
+          display: flex;
+          flex-direction: column;
+          span{
+            margin: 0;
+            max-width: 250px;
+          }
+        }
+      }
+    }
+  }
+  header{
+    background-color: #f0f0f0;
+    .header-wrap{
+      flex-direction: column;
+      gap: 5px;
+      .page-title{
+        text-align: center;
+        h1{
+          display: none;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
