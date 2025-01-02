@@ -1,4 +1,6 @@
 import logo from '/Day Organiser - Favicon.png'
+import React from 'react'
+import { BrowserRouter,Link } from 'react-router-dom'
 
 function Footer(){
     return(
@@ -8,7 +10,13 @@ function Footer(){
                     <div className="logo-wrap">
                         <img src={logo} alt="Website Logo" />
                     </div>
-                    <p>&copy; {new Date().getFullYear()} Day Organiser</p>
+                    <nav>
+                        <ul>
+                            <li><Link to="/Day-Organiser/" >Home</Link></li>
+                            <li><Link to="/Day-Organiser/contact/" >Contact Us</Link></li>
+                        </ul>
+                    </nav>
+                    <p>&copy; {new Date().getFullYear()} Day Organiser | Yash Ojha</p>
                 </div>
             </div>
         </footer>

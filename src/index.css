@@ -170,6 +170,33 @@ footer{
       margin: 0;
       color: #fff;
     }
+    nav{
+      ul{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        li{
+          color: #fff;
+          a{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.social-media{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+
+  li{
+    svg{
+      font-size: 22px;
+    }
   }
 }
 
